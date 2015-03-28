@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 数据存取功能实现类
  */
-public class Controller {
+public class SaveAndRead {
 
 	
 	//构造测试对象
@@ -36,7 +36,7 @@ public class Controller {
 	}
 	
 	//读取对象
-	public void readPerson(String filename) throws IOException{
+	public void read(String filename) throws IOException{
 		@SuppressWarnings("resource")
 		BufferedReader reader =new BufferedReader(new FileReader(filename));
 		String line;
