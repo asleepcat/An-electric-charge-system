@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.bme.base.model">
+
+	<class name="GetData" table="t_getdata">
+		<id name="gdid">
+			<generator class="native" />
+		</id>
+		<property name="yhid" />
+		<property name="cbrq" />
+		<property name="cbdl" />
+		<property name="sfqy" />
+	</class>
+
+</hibernate-mapping>

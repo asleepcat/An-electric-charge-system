@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.bme.base.model">
+
+	<class name="UserInfo" table="t_userinfo">
+		<id name="yhid">
+			<generator class="native" />
+		</id>
+		<property name="yhxm" />
+		<property name="yhsfz" />
+		<property name="yhdz" />
+		<property name="yhdh" />
+		<property name="yhqq" />
+		<property name="powertypeID" />
+		<property name="yhcz" />
+		<property name="yhemail" />
+		<property name="yhkhyh" />
+		<property name="yhyhzh" />
+		<property name="yhye" />
+	</class>
+
+</hibernate-mapping>
