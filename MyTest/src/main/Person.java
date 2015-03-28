@@ -1,5 +1,10 @@
-package test;
-
+package main;
+/**
+ * 
+ * @author 张昊
+ * 生成对象的实体类
+ *
+ */
 public class Person {
 	private String name;
 	private String sex;

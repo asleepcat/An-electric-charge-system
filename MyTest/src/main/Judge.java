@@ -1,0 +1,15 @@
+package main;
+/**
+ * 
+ * @author 张昊
+ * 功能：表结构控制类
+ *
+ */
+public class Judge {
+	public void judgeIsExit(Object o){
+		
+		
+		
+	}
+
+}
