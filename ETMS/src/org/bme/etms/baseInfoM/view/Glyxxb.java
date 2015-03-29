@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.bme.base.model.LoginInfo;
 import org.bme.etms.base.BaseBll;
-import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;

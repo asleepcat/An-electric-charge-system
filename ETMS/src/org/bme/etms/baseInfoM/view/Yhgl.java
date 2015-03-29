@@ -4,8 +4,6 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
 import org.bme.base.model.GetData;
 import org.bme.base.model.UserInfo;
 import org.bme.etms.base.BaseBll;
