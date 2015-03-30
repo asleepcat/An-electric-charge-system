@@ -1,4 +1,4 @@
-package main;
+package main.domain;
 /**
  * 
  * @author 张昊

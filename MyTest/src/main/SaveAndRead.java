@@ -1,31 +1,20 @@
 package main;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 /**
  * 数据存取功能实现类
  */
 public class SaveAndRead {
 
-	
-	//构造测试对象
-//	public  List<Person> createPerson(){
-//		List<Person> list=new ArrayList<Person>();
-//		list.add(new Person("a", "a", "a", "a", "a"));
-//		list.add(new Person("b", "b", "b", "b", "b"));
-//		list.add(new Person("c", "c", "c", "c", "c"));
-//		list.add(new Person("d", "d", "d", "d", "d"));
-//		//封装四个对象
-//		return list;
-//	}
 	//保存对象
-	public void save(List<Person> persons,String filename) throws IOException{
+	public static void save(List<Object> persons,String filename) throws IOException{
 		String data ="";
-		for (Person person : persons) {
+		for (Object person : persons) {
 			data+=person.toString()+"\n";
 		}
 		//保存文件
@@ -36,7 +25,7 @@ public class SaveAndRead {
 	}
 	
 	//读取对象
-	public void read(String filename) throws IOException{
+	public static void read(String filename) throws IOException{
 		@SuppressWarnings("resource")
 		BufferedReader reader =new BufferedReader(new FileReader(filename));
 		String line;
@@ -44,4 +33,11 @@ public class SaveAndRead {
 			System.out.println(line);
 		}
 	}
+	
+	//删除对象
+	public static Boolean delete(String name){
+		File f=new File(name);
+		return f.delete();
+	}
+	
 }
